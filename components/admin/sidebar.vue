@@ -19,17 +19,17 @@ const sidebarItems = ref([
     {
         name: 'Dashboard',
         path: '/',
-        icon: 'icon-people',
+        icon: 'fa6-solid:list',
     },
     {
         name: 'User',
         path: '/',
-        icon: 'icon-people',
+        icon: 'eva:people-fill',
     },
     {
         name: 'Setting',
         path: '/',
-        icon: 'icon-people',
+        icon: 'ic:sharp-settings',
     },
 ]);
 </script>
