@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between items-center mx-3 mt-5 px-5  bg-[#1e1d22] rounded-t-md">
+    <div class="flex justify-between items-center mx-8 mt-5 px-5  bg-[#1e1d22] rounded-md">
         <div class="flex py-5">
             <label class="text-lg">Dashboard</label>
             <span class="mx-3">|</span>

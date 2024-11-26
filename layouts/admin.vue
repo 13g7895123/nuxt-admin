@@ -4,7 +4,7 @@
       <div class="flex-1 flex flex-col bg-[#151419] text-white">
         <AdminNavbar/>
         <!-- Main Content -->
-        <main class="flex-1 p-3 pt-5">
+        <main class="flex-1 mx-8 px-1 pb-2 pt-5 overflow-y-auto">
           <slot></slot>
         </main>
       </div>
