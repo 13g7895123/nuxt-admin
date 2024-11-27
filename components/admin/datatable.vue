@@ -4,16 +4,7 @@
         <!-- Title -->
         <label class="text-2xl text-bold">{{ tableName }}</label>
         <!-- Buttons -->
-        <div class="flex gap-1">
-          <div class="flex items-center px-3 py-1 border-2 border-blue-400 hover:border-transparent hover:bg-blue-200 rounded-md cursor-pointer group">
-            <Icon class="text-base text-blue-200 group-hover:text-blue-500" :name="'fluent-emoji-high-contrast:plus'"></Icon>
-            <span class="ml-2 text-blue-200 group-hover:text-blue-500">New Data</span>
-          </div>
-          <div class="flex items-center px-3 py-1 border-2 border-red-400 hover:border-transparent hover:bg-red-200 rounded-md cursor-pointer group">
-            <Icon class="text-lg text-red-200 group-hover:text-red-500" :name="'mynaui:trash'"></Icon>
-            <span class="ml-2 text-red-200 group-hover:text-red-500">Batch Delete Data</span>
-          </div>
-        </div>
+        <slot :name="`action-buttons`"></slot>
       </div>
       <div class="flex justify-between items-center px-5 py-5 border-b border-white">
         <div></div>
