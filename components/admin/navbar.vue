@@ -16,14 +16,24 @@
                 <div class="w-14 h-14 rounded-full">
                     <img class="border-2 border-transparent group-hover:border-white rounded-full group-hover:shadow-glow group-hover:shadow-white cursor-pointer" src="/assets/images/lynn_1.png"/>
                 </div>
-                <div class="hidden group-hover:block absolute -left-5 bg-white text-[#555] rounded-md transition duration-300 ease-in-out">
+                <!-- Dropdown -->
+                <div class="hidden group-hover:block absolute -left-16 bg-white text-[#555] rounded-md transition duration-300 ease-in-out">
                     <ul class="p-3">
-                        <li class="py-1">Profile</li>
-                        <li class="py-1">Setting</li>
+                        <li class="flex items-center py-1 cursor-pointer">
+                            <Icon class="w-10 text-lg" :name="'icon-park-solid:people'"/>
+                            <span>Profile</span>
+                        </li>
+                        <li class="flex items-center py-1 cursor-pointer">
+                            <Icon class="w-10 text-lg" :name="'ic:sharp-settings'"/>
+                            <span>Setting</span>
+                        </li>
                         <hr>
                         <li
                         @click="console.log('log out now!')"
-                        class="pt-1 cursor-pointer">Logout</li>
+                        class="flex justify-center items-center mt-1 px-2 py-1 bg-red-400 hover:bg-red-500 text-white rounded-md cursor-pointer">
+                            <span>Logout</span>
+                            <Icon class="w-5 ml-2 text-lg" :name="'line-md:logout'"/>
+                        </li>
                     </ul>
                 </div>
             </div>
