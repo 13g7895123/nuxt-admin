@@ -23,7 +23,7 @@ const sidebarItems = ref([
     },
     {
         name: 'User',
-        path: '/',
+        path: '/user',
         icon: 'eva:people-fill',
     },
     {
